@@ -16,21 +16,14 @@
   <body>
     <div class="container">
       <h2>Challenge 2: Cat Generator</h2>
-      <button class="btn btn-success">Generate cat</button>
-      <div class="flex-box-container">
-        <img
-          src="http://thecatapi.com/api/images/get?format=src&type=gif&size=small"
-          alt=""
-        />
-        <img
-          src="http://thecatapi.com/api/images/get?format=src&type=gif&size=small"
-          alt=""
-        />
-        <img
-          src="http://thecatapi.com/api/images/get?format=src&type=gif&size=small"
-          alt=""
-        />
-      </div>
+      <button
+        class="btn btn-success"
+        id="cat-generator"
+        onClick="generateCat()"
+      >
+        Generate cat
+      </button>
+      <div class="flex-box-container" id="flex-cat-gen"></div>
     </div>
 
     <script src="src/app.js"></script>
